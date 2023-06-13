@@ -1,5 +1,7 @@
 <?php
 
+// referans: https://www.w3schools.com/php/php_constants.asp
+
 // Sabitler veri saklamak için kullanılı ancak tanımlanan değer değiştirilemez.
 
 // Sabit tanımlama
