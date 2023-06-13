@@ -1,5 +1,7 @@
 <?php
 
+// referans: https://www.w3schools.com/php/php_ref_math.asp
+
 $sayi1 = 5;
 $sayi2 = 3;
 
