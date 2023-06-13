@@ -1,5 +1,7 @@
 <?php
 
+// https://www.w3schools.com/php/php_ref_string.asp referanslar
+
 $ad = "Rıdvan";
 $soyad = "Atmaca";
 $yas = 19;
