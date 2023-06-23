@@ -33,11 +33,32 @@ echo $kontrol . "<br>";
 
 // 7- a, b, c için en büyüklük kontrolü yapınız.
 
+$sonuc = ($a > $b and $a > $c);
+echo "a en büyük" . $sonuc . "<br>";
+
+$sonuc = ($b > $a and $b > $c);
+echo "b en büyük" . $sonuc . "<br>";
+
+$sonuc = ($c > $a and $c > $b);
+echo "c en büyük" . $sonuc . "<br>" . "<br>";
+
 /* 
 2 vize (%60) ve final (%40) notuna göre ortalama hesaplayınız.
 a- Eğer ortalama 50 ve üstündeyse geçti, değilse kaldı yazdırınız.
 b- Geçmek için ortalama 50 olsa bile final notu en az 50 olmalıdır.
 c- Geçmek için finalden 70 alındığından ortalamanın önemi olmasın.
 */
+
+$vize1 = 10;
+$vize2 = 10;
+$final = 70;
+
+$ortalama = (($vize1 + $vize2) / 2) * 0.6 + $final * 0.4;
+// $gecmeDurumu = $ortalama >= 50;
+// $gecmeDurumu = ($ortalama >= 50 and $final >= 50);
+$gecmeDurumu = ($ortalama >= 50 or $final >= 70);
+
+echo "Ortalama: " . $ortalama . "<br>";
+echo "Geçme Durumu: " . (int) $gecmeDurumu . "<br>";
 
 ?>
