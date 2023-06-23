@@ -13,10 +13,10 @@ xor => x ve y nin bir tanesinin true ya da ikisinin de true olmasıyla sonuç fa
 $yas = 20;
 $mezuniyet = "lise";
 
-$sonuc = ($yas >= 18) and $mezuniyet == "lise"; // Yaş 18 den büyük ve mezuniyet ilkokul ise ehliyet alabilir.
+$sonuc = ($yas >= 18) and ($mezuniyet == "lise"); // Yaş 18 den büyük ve mezuniyet ilkokul ise ehliyet alabilir.
 echo $sonuc . "<br>";
 
-$sonuc = ($yas >= 18) or $mezuniyet == "lise"; // Yaş 18 den büyük veya mezuniyet ilkokul ise ehliyet alabilir.
+$sonuc = ($yas >= 18) or ($mezuniyet == "lise"); // Yaş 18 den büyük veya mezuniyet ilkokul ise ehliyet alabilir.
 
 // and
 /*
