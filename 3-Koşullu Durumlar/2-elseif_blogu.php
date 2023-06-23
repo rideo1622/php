@@ -25,4 +25,21 @@ if ($saat < 10) {
   echo "İyi geceler";
 }
 
+echo "<br>"
+
+$username = "admin";
+$parola = "1234";
+
+if ($username == "admin" and $parola == "1234"){
+echo "Her ikisi de doğru";
+    } elseif ($username == "admin" and $parola != "1234"){
+    echo "Sadece kullanıcı adı doğru";
+    	} elseif ($username != "admin" and $parola == "1234"){
+		echo "Sadece parola doğru";
+} else {
+echo "Her ikisi de yanlış";
+}
+
+
+
 ?>
