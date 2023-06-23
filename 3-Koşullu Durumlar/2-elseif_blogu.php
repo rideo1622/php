@@ -1,17 +1,5 @@
 <?php
 
-/*
-$username = "admin";
-$password = "123456";
-
-if ($username != "admin") {
-  echo "Kullanıcı adı yanlış";
-} elseif ($password != "123456") {
-  echo "Şifre yanlış";
-} else {
-  echo "Giriş başarılı";
-}
-*/
 
 $saat = 23;
 
@@ -25,7 +13,8 @@ if ($saat < 10) {
   echo "İyi geceler";
 }
 
-echo "<br>"
+echo "<br>";
+echo "<hr>";
 
 $username = "admin";
 $parola = "1234";
@@ -39,7 +28,5 @@ echo "Her ikisi de doğru";
 } else {
 echo "Her ikisi de yanlış";
 }
-
-
 
 ?>
