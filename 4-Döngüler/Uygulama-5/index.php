@@ -2,10 +2,11 @@
 const TITLE = "Popüler Kurslar";
 
 $kategoriler = [
-  "Programlama",
-  "Web Geliştirme",
-  "Veri Analizi",
-  "Ofis Uygulamaları",
+  ["kategoriAd" => "Programlama", "aktif" => false],
+  ["kategoriAd" => "Web Geliştirme", "aktif" => true],
+  ["kategoriAd" => "Veri Analizi", "aktif" => false],
+  ["kategoriAd" => "Ofis Uygulamaları", "aktif" => false],
+  ["kategoriAd" => "Mobil Uygulamalar", "aktif" => false],
 ];
 
 sort($kategoriler);
@@ -54,13 +55,6 @@ $kurs2_aciklama = ucfirst(strtolower($kurslar["2"]["kursAciklama"]));
 $kurs3_aciklama = ucfirst(strtolower($kurslar["3"]["kursAciklama"]));
 $kurs4_aciklama = ucfirst(strtolower($kurslar["4"]["kursAciklama"]));
 
-/*
-$kurs1_aciklama = substr($kurs1_aciklama, 0, 30) . "...";
-$kurs2_aciklama = substr($kurs2_aciklama, 0, 30) . "...";
-$kurs3_aciklama = substr($kurs3_aciklama, 0, 30) . "...";
-$kurs4_aciklama = substr($kurs4_aciklama, 0, 30) . "...";
-*/
-
 $kurs1_url = str_replace(
   [" ", "."],
   ["-", "-"],
@@ -90,7 +84,7 @@ $kurs4_url = str_replace(
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
-    <title>Uygulama-4</title>
+    <title>Uygulama-5</title>
 </head>
 
 <body>
@@ -98,10 +92,17 @@ $kurs4_url = str_replace(
         <div class="row">
             <div class="col-3">
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action active"><?php echo $kategoriler[0]; ?></a>
-                    <a href="#" class="list-group-item list-group-item-action"><?php echo $kategoriler[1]; ?></a>
-                    <a href="#" class="list-group-item list-group-item-action"><?php echo $kategoriler[2]; ?></a>
-                    <a href="#" class="list-group-item list-group-item-action"><?php echo $kategoriler[3]; ?></a>
+                    <?php for ($i = 0; $i < count($kategoriler); $i++): ?>
+
+                    <a href="#" class="list-group-item list-group-item-action <?php echo $kategoriler[
+                      $i
+                    ]["aktif"]
+                      ? "active"
+                      : ""; ?>">
+                        <?php echo $kategoriler[$i]["kategoriAd"]; ?>
+                    </a>
+
+                    <?php endfor; ?>
                 </div>
             </div>
             <div class="col-9">

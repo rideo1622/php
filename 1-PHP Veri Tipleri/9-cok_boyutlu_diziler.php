@@ -55,8 +55,8 @@ echo $sinif["100"]["notlar"]["Fizik"][1] . "<br>";
 echo $sinif["100"]["notlar"]["Kimya"][2] . "<br>";
 
 // Sınıfın 200 numaralı öğrencisinin kimya dersi notlarının ortalamasını hesaplama
-$not1 = $sinif["200"]["notlar"]["Kimya"][0];
-$not2 = $sinif["200"]["notlar"]["Kimya"][1];
+$not1 = $sinif["200"]["notlar"]["Matematik"][0];
+$not2 = $sinif["200"]["notlar"]["Fizik"][1];
 $not3 = $sinif["200"]["notlar"]["Kimya"][2];
 
 $kimya_ortalama = ($not1 + $not2 + $not3) / 3;

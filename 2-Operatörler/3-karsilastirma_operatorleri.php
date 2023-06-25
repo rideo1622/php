@@ -1,7 +1,5 @@
 <?php
 
-//Referans: https://www.php.net/manual/tr/language.operators.comparison.php
-
 /*
 Karşılaştırma Operatörleri
 == Eşitse

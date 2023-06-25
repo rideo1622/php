@@ -87,7 +87,7 @@ $kurs4_url = str_replace(
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
-    <title>Uygulama-1</title>
+    <title>Uygulama-3</title>
 </head>
 
 <body>
@@ -115,8 +115,7 @@ $kurs4_url = str_replace(
                         <div class="col-4">
                             <img src="img/<?php echo $kurslar["1"][
                               "resim"
-                            ]; ?>" alt="php"
-                                class="img-fluid rounded-start">
+                            ]; ?>" alt="php" class="img-fluid rounded-start">
                         </div>
                         <div class="col-8">
                             <div class="card-body">
@@ -147,8 +146,7 @@ $kurs4_url = str_replace(
                         <div class="col-4">
                             <img src="img/<?php echo $kurslar["2"][
                               "resim"
-                            ]; ?>" alt="python"
-                                class="img-fluid rounded-start">
+                            ]; ?>" alt="python" class="img-fluid rounded-start">
                         </div>
                         <div class="col-8">
                             <div class="card-body">
@@ -179,8 +177,7 @@ $kurs4_url = str_replace(
                         <div class="col-4">
                             <img src="img/<?php echo $kurslar["3"][
                               "resim"
-                            ]; ?>" alt="node.js"
-                                class="img-fluid rounded-start">
+                            ]; ?>" alt="node.js" class="img-fluid rounded-start">
                         </div>
                         <div class="col-8">
                             <div class="card-body">
@@ -211,8 +208,7 @@ $kurs4_url = str_replace(
                         <div class="col-4">
                             <img src="img/<?php echo $kurslar["4"][
                               "resim"
-                            ]; ?>" alt="node.js"
-                                class="img-fluid rounded-start">
+                            ]; ?>" alt="node.js" class="img-fluid rounded-start">
                         </div>
                         <div class="col-8">
                             <div class="card-body">
