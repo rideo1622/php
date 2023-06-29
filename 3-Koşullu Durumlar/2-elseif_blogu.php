@@ -4,13 +4,16 @@
 $username = "admin";
 $password = "123456";
 
-if ($username != "admin") {
+if ($username != "admin" and $password != "123456"){
+echo "Kullanıcı adı ve parola yanlış";
+}elseif ($username != "admin") {
   echo "Kullanıcı adı yanlış";
 } elseif ($password != "123456") {
   echo "Şifre yanlış";
-} else {
+}else{
   echo "Giriş başarılı";
 }
+
 */
 
 $saat = 23;
