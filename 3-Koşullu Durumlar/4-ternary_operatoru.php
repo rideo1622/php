@@ -1,6 +1,6 @@
 <?php
 
-$yas = 20;
+$yas = 18;
 $egitim = "Lise";
 
 /*
@@ -23,4 +23,12 @@ $sonuc =
       : "Eğitim durumu yetersiz.")
     : "Yaşınız tutmuyor.";
 echo $sonuc;
+
+echo "<br>";
+
+
+//Sadece yaş kontrolü
+$sonuc1 = $yas >= 18 ? "Ehliyet alabilirsiniz" : "Yaşınız Tutmuyor";
+
+echo $sonuc1;
 ?>
